@@ -6,7 +6,7 @@ export class Age {
     this.ageVenus = 0;
     this.ageMars = 0;
     this.ageJupiter = 0;
-    this.ageProxima = "";
+    this.ageProxima = 0;
   }
 
   calculateMercury() {

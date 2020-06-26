@@ -30,13 +30,13 @@ Calculates a persons age based on the year lengths of different planets in the s
     * **Input Example:** 42
     * **Output Example:** 3.54
 
-6. **Behavior:** Program
-    * **Input Example:**
-    * **Output Example:**
+6. **Behavior:** Program will calculate your life expectancy for each planet
+    * **Input Example:** 99
+    * **Output Example:** Mercury: 412.5, Venus: 159.68, Mars: 52.66, Jupiter: 8.35
 
-7. **Behavior:** Program
-    * **Input Example:**
-    * **Output Example:**
+7. **Behavior:** Program will determine if you have lived past your life expentancy on each planet and return how many years you have lived past that
+    * **Input Example:** age: 77, lifeExpectancy: 70
+    * **Output Example:** "You have lived 7 years past your life expectancy, Woot!"
 
 
 ## Setup and Installation

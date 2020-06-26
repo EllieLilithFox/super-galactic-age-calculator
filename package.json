@@ -1,7 +1,7 @@
 {
-  "name": "blank",
+  "name": "super-galactic-age-calculator",
   "version": "1.0.0",
-  "description": "",
+  "description": "Calulates your age based on different planets orbits",
   "main": "main.js",
   "scripts": {
     "build": "webpack --mode development",

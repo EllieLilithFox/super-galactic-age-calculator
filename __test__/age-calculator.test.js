@@ -25,4 +25,9 @@ describe("Age", () => {
     reusableAge.calculateVenus();
     expect(reusableAge.ageVenus).toBe(68);
   });
+
+  test("should calculate age on Venus and save it to ageVenus property", () => {
+    reusableAge.calculateMars();
+    expect(reusableAge.ageMars).toBe(22);
+  });
 });

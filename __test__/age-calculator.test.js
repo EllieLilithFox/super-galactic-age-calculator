@@ -14,6 +14,11 @@ describe("Age", () => {
     expect(reusableAge.ageVenus).toBe(0);
     expect(reusableAge.ageMars).toBe(0);
     expect(reusableAge.ageJupiter).toBe(0);
-  })
+  });
+
+  test("should calculate age on mercury and save it to ageMercury property", () => {
+    reusableAge.calculateMercury();
+    expect(reusableAge.ageMercury).toBe(175);
+  });
   
 });

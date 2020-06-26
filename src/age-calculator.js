@@ -7,4 +7,8 @@ export class Age {
     this.ageMars = 0;
     this.ageJupiter = 0;
   }
+
+  calculateMercury() {
+    this.ageMercury = 0;
+  }
 }

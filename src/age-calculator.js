@@ -11,4 +11,8 @@ export class Age {
   calculateMercury() {
     this.ageMercury = Math.round(this.age / .24);
   }
+
+  calculateVenus() {
+    this.ageVenus = 0;
+  }
 }

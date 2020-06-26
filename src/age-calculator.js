@@ -21,6 +21,6 @@ export class Age {
   }
 
   calculateJupiter() {
-    this.ageJupiter = 0;
+    this.ageJupiter = Math.round(this.age / 11.86);
   }
 }

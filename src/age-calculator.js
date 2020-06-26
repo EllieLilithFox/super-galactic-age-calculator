@@ -26,7 +26,7 @@ export class Age {
   }
 
   calculateProxima() {
-    this.ageProxima = 0;
+    this.ageProxima = Math.round(this.age / .03);
   }
 
   calculateLifeLeft() {

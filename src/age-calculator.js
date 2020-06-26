@@ -13,6 +13,6 @@ export class Age {
   }
 
   calculateVenus() {
-    this.ageVenus = 0;
+    this.ageVenus = Math.round(this.age / .62);
   }
 }

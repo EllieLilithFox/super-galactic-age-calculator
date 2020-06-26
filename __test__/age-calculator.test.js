@@ -4,7 +4,7 @@ describe("Age", () => {
   let reusableAge;
 
   beforeEach(() => {
-    reusableAge = new Age();
+    reusableAge = new Age(42, 99);
   })
 
   test("should create an age object with correct values", () => {

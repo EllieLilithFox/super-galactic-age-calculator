@@ -27,21 +27,28 @@ export class Age {
   calcLightYear(planet) {
     const lightSpeedAge = Math.round(this.age / 6.9);
     let planetLightSpeedAge = 0;
+    let planetNormalAge = 0;
     switch (planet) {
     case "Mercury":
       planetLightSpeedAge = Math.round(lightSpeedAge / .24);
+      planetNormalAge = this.ageMercury;
       break;
     case "Venus":
       planetLightSpeedAge = Math.round(lightSpeedAge / .62);
+      planetNormalAge = this.ageVenus;
       break;
     case "Mars":
       planetLightSpeedAge = Math.round(lightSpeedAge / 1.88);
+      planetNormalAge = this.ageMars;
       break;
     case "Jupiter":
       planetLightSpeedAge = Math.round(lightSpeedAge / 11.86);
+      planetNormalAge = this.ageJupiter;
       break;
+    // default case is "Proxima Centauri b"
     default:
       planetLightSpeedAge = Math.round(lightSpeedAge / .03);
+      planetNormalAge = this.ageProxima;
     }
 
     return ``;

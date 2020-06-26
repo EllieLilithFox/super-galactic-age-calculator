@@ -25,9 +25,9 @@ export class Age {
     this.ageJupiter = Math.round(this.age / 11.86);
   }
 
-  // calculateProxima() {
-  //   this.ageProxima = Math.round(this.age / .03);
-  // }
+  calculateProxima() {
+    this.ageProxima = 0;
+  }
 
   calculateLifeLeft() {
     this.calculateMercury();

@@ -23,7 +23,6 @@ export class Age {
     }
   }
 
-  // age / 6.9
   calcLightYear(planet) {
     const lightSpeedAge = Math.round(this.age / 6.9);
     let planetLightSpeedAge = 0;
@@ -51,6 +50,6 @@ export class Age {
       planetNormalAge = this.ageProxima;
     }
 
-    return ``;
+    return `If an identical ${planet} were traveling at %99 the speed of light you would be ${planetNormalAge} ${planet} years on slow ${planet} and only ${planetLightSpeedAge} ${planet} years on fast ${planet}.`;
   }
 }

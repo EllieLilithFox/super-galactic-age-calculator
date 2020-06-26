@@ -30,15 +30,15 @@ export class Age {
     this.calculateMars();
     this.calculateJupiter();
 
-    let mercuryLifeLeft = Math.round(this.lifeExpectancy / .24) - this.ageMercury;
-    let venusLifeLeft = Math.round(this.lifeExpectancy / .62) - this.ageVenus;
-    let marsLifeLeft = Math.round(this.lifeExpectancy / 1.88) - this.ageMars;
-    let jupiterLifeLeft = Math.round(this.lifeExpectancy / 11.86) - this.ageJupiter;
+    let mercuryLifeLeft = Math.abs(Math.round(this.lifeExpectancy / .24) - this.ageMercury);
+    let venusLifeLeft = Math.abs(Math.round(this.lifeExpectancy / .62) - this.ageVenus);
+    let marsLifeLeft = Math.abs(Math.round(this.lifeExpectancy / 1.88) - this.ageMars);
+    let jupiterLifeLeft = Math.abs(Math.round(this.lifeExpectancy / 11.86) - this.ageJupiter);
 
     if (this.age < this.lifeExpectancy) {
-      return ``;
+      return `You have ${mercuryLifeLeft} Mercury Years, ${venusLifeLeft} Venus years, ${marsLifeLeft} Mars years and ${jupiterLifeLeft} Jupiter years left to live.`;
     } else {
-      return ``;
+      return `You have lived ${mercuryLifeLeft} Mercury Years, ${venusLifeLeft} Venus years, ${marsLifeLeft} Mars years and ${jupiterLifeLeft} Jupiter years over your live expectancy.`;
     }
   }
 }
